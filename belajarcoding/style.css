@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: #444;
+    color: #fff;
+    padding: 1 rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+#hero {
+    background: #f4f4f4;
+    padding: 5rem 0;
+    text-align: center;
+}
+#hero h2 {
+    margin-bottom: 1rem;
+}
+.btn {
+    background: #008000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+section {
+    padding: 4rem 0;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+     width: 100%;
+}
+#Projects .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content : center;
+}
+.project {
+   flex:1 1 300px;
+   max-width: 350px;
+   padding:15px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   background: #fff;
+   box-sizing: border-box;
+}
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+#about p, #Contact p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+footer {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+#hero{
+    background-image: url('images/one.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/one.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000
+}
+.about-card {
+    display: flex;                /* Membuat foto dan teks berdampingan */
+    align-items: center;          /* Menyelajarkan posisi secara vertikal di tengah */
+    gap: 40px;                    /* Jarak antara foto dan teks */
+    background-color: #ffffff;    /* Warna latar belakang kotak (putih) */
+    padding: 100px 60px;                /* Ruang di dalam kotak */
+    border-radius: 12px;          /* Membuat sudut kotak melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan kotak */
+    margin-top: 20px;
+}
+
+/* Pengaturan Area Foto */
+.about-img {
+    flex: 0 0 280px;              /* Lebar tetap untuk area foto */
+    text-align: center;
+}
+
+.about-img img {
+    width: 100%;                  /* Membuat foto responsif mengikuti lebar kotaknya */
+    max-width: 400px;
+    height: 350px;                /* Tinggi foto (bisa disesuaikan) */
+    object-fit: cover;            /* Agar foto tidak gepeng */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Bayangan tipis pada foto */
+}
+
+/* Pengaturan Area Teks */
+.about-text {
+    flex: 1;                      /* Teks akan mengisi sisa ruang yang ada */
+    color: #333333;               /* Warna teks agar mudah dibaca */
+    line-height: 1.6;             /* Jarak antar baris teks agar lebih rapi */
+}
+
+.about-text p {
+    margin-bottom: 15px;          /* Jarak antar paragraf */
+}
+
+/* Responsif untuk Layar HP (Opsional) */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;   /* Jika di HP, foto akan berada di atas teks */
+        text-align: center;
+    }
+}
